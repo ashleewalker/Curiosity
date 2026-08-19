@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "curiosity-memory"
+version = "0.1.0"
+description = "Local-first context memory for AI agents"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Ashley Walker"}]
+license = {text = "MIT"}
+
+[project.scripts]
+curiosity = "curiosity.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["curiosity*"]
